@@ -10,10 +10,28 @@ html, body, #app {
 }
 
 .map {
-  height: 100%;
-  width: 100%;
+  height: 92vh;
+  width: 100vw;
 }
 
 .logo {
   width: 200px;
+}
+
+.my-container {
+  /*background-color: white;
+  text-align: right;
+  padding: 10px 50px;*/
+  height: 8vh;
+}
+
+.main-header {
+  display: inline;
+  margin-right: 10px;
+}
+
+.my-wrapper {
+  display: inline;
+  /*float: right;*/
+  text-align: right;
 }

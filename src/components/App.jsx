@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+
 import MapContainer from './MapContainer';
 import VoterModal from './VoterModal.jsx';
 import axios from 'axios';
+import Header from './Header';
+
 
 export default class App extends Component {
   constructor() {
@@ -67,6 +70,7 @@ export default class App extends Component {
     return (
       this.state.layers.councilDist && this.state.layers.commissionerDist ?
         <div className="map">
+          <Header />
           <MapContainer data={this.state.layers} />
           <VoterModal show={this.state.modalShow} onHide={modalClose} onSubmit={this._getVoterInfo} onUpdate={this._handleInputChange}/>
         </div> : null
